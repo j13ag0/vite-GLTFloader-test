@@ -13,7 +13,7 @@ run();
 function loadData() {
     let gltfLoader = new GLTFLoader();
 
-    let str = "/cubeFish.glb";
+    let str = "/assets/models/cubeFish.glb";
 
     gltfLoader.load( str, gltfFishReader, null, null );
 }
@@ -25,7 +25,7 @@ function gltfFishReader( gltf ) {
     fishModel = gltf.scene;
 
     if( fishModel != null ) {
-        console.log("fish loaded:  " + fishModel );
+        console.log("cubeFish LOADED !:  " + fishModel );
     } else {
         console.log("Load FAILED.  " ); 
     }
